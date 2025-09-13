@@ -1,34 +1,22 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Canva Embed</title>
-  <style>
-    /* Full-bleed page */
-    html, body { height: 100%; margin: 0; }
-    body { background:#0f4c81; }          /* optional */
-    .wrap {
-      width: 100vw; height: 100vh;        /* fill viewport */
-      margin: 0; padding: 0;              /* no padding/margins */
-    }
-    iframe {
-      display:block; width: 100%; height: 100%;
-      border: 0; border-radius: 12px;     /* optional */
-      box-shadow: 0 8px 24px rgba(0,0,0,.18);
-    }
-  </style>
-</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Site</title>
+<style>
+  html,body{margin:0;height:100%}
+  .wrap{height:100svh;}               /* 比 100vh 更穩定的手機高度 */
+  iframe{width:100%;height:100%;border:0;display:block}
+</style>
 <body>
   <div class="wrap">
-    <iframe
-      src="https://www.canva.com/design/DAGyyyyr-NE/8MuXt2mdNFvKSoWuRIzDDw/embed"
-      loading="lazy" allowfullscreen
-      referrerpolicy="strict-origin-when-cross-origin"
-      title="Canva">
-    </iframe>
+    <div style="position: relative; width: 100%; height: 0; padding-top: 393.5578%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+        src="https://www.canva.com/design/DAGyyyyr-NE/8MuXt2mdNFvKSoWuRIzDDw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+      </iframe>
+    </div>
   </div>
 </body>
 </html>
-
-
