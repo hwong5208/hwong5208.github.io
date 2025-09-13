@@ -4,23 +4,34 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>My Site</title>
 <style>
-  html,body{margin:0;height:100%}
-  .wrap{height:100svh;}               /* 比 100vh 更穩定的手機高度 */
-  iframe{width:100%;height:100%;border:0;display:block}
+  html,body{margin:0}
+  .container{
+    max-width: 900px;       /* 可選：限制最大寬度，居中更好睇 */
+    margin: 1.6em auto 0.9em;
+  }
+  .embed{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;   /* 你可改 4/3、21/9 等 */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(63,69,81,0.16);
+  }
+  .embed > iframe{
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    border: 0; display: block;
+  }
 </style>
 <body>
-  <div class="wrap">
-  <div style="position: relative; width: 100%; height: 0; padding-top: 393.5578%;
-   padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-   border-radius: 8px; will-change: transform;">
-    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-      src="https://www.canva.com/design/DAGyyyyr-NE/qbG8oMiEjd0GwqZYyd9g3g/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-    </iframe>
-  </div>
+  <div class="container">
+    <div class="embed">
+      <iframe
+        loading="lazy"
+        src="https://www.canva.com/design/DAGyyyyr-NE/qbG8oMiEjd0GwqZYyd9g3g/view?embed"
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
 </body>
 </html>
-
-
-
-
